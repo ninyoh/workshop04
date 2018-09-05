@@ -19,7 +19,7 @@ if ( isset($_POST['make']) && isset($_POST['year'])
 </head>
 <body>
 	<div class="container">
-<p><H2>Tracking Autos for ninyoh@amora.edu</H2></p>
+<p><H2>Tracking Autos for csev@umich.edu</H2></p>
 <form method="post">
 <p>Make:
 <input type="text" name="make" size="40"></p>
@@ -27,8 +27,9 @@ if ( isset($_POST['make']) && isset($_POST['year'])
 <input type="text" name="year"></p>
 <p>Mileage:
 <input type="text" name="mileage"></p>
-<p><input type="submit" value="Add New"/></p>
+<p><input type="submit" value="Add New"/>
+ <a href="/workshop4/autos2.php" target="_blank" input type="submit" value="sdfs">Show Database</a>
+</p>
 </div>
 </form>
 </body>
-
