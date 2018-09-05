@@ -19,7 +19,7 @@ if ( isset($_POST['make']) && isset($_POST['year'])
 </head>
 <body>
 	<div class="container">
-<p><H2>Tracking Autos for csev@umich.edu</H2></p>
+<p><H2>Tracking Autos for ninyoh@amora.edu</H2></p>
 <form method="post">
 <p>Make:
 <input type="text" name="make" size="40"></p>
