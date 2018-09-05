@@ -28,7 +28,7 @@ if ( isset($_POST['make']) && isset($_POST['year'])
 <p>Mileage:
 <input type="text" name="mileage"></p>
 <p><input type="submit" value="Add New"/>
- <a href="/workshop4/autos2.php" target="_blank" input type="submit" value="sdfs">Show Database</a>
+ <a href="https://ninyoh.herokuapp.com/autos2.php" target="_blank" input type="submit" value="sdfs">Show Database</a>
 </p>
 </div>
 </form>
