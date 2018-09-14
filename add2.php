@@ -25,7 +25,7 @@ $dbh = new PDO("mysql:host=sql12.freesqldatabase.com;dbname=sql12256794",sql1225
 $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // <== add this line
 /*$sql = "INSERT INTO users (make, year, mileage)
 VALUES ('".$_POST["make"]."','".$_POST["year"]."','".$_POST["mileage"]."')";*/
-$stmt = $dbh->prepare('INSERT INTO users (make, year, mileage) VALUES ( :mk, :yr, :mi)');
+$stmt = $dbh->prepare('INSERT INTO autos (make, year, mileage) VALUES ( :mk, :yr, :mi)');
     $stmt->execute(array(
         ':mk' => $_POST['make'],
         ':yr' => $_POST['year'],
