@@ -19,7 +19,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
         $check = hash('md5', $salt.$_POST['pass']);
         if ( $check == $stored_hash ) {
             // Redirect the browser to game.php
-            header("Location: autos.php".urlencode($_POST['ninyoh@yahoo.com']));
+            header("Location: add.php".urlencode($_POST['ninyoh@yahoo.com']));
             return;
         } else {
             $failure = "Incorrect password";
