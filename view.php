@@ -2,7 +2,7 @@
 require_once "pdo.php";
 if ( isset($_POST['make']) && isset($_POST['year']) 
      && isset($_POST['mileage'])) {
-    $sql = "INSERT INTO users (make, year, mileage) 
+    $sql = "INSERT INTO autos (make, year, mileage) 
               VALUES (:make, :year, :mileage)";
     echo("<pre>\n".$sql."\n</pre>\n");
     $stmt = $pdo->prepare($sql);
@@ -11,7 +11,7 @@ if ( isset($_POST['make']) && isset($_POST['year'])
         ':year' => $_POST['year'],
         ':mileage' => $_POST['mileage']));
 }
-$stmt = $pdo->query("SELECT make, year, mileage FROM users");
+$stmt = $pdo->query("SELECT make, year, mileage FROM autos");
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <html>
